@@ -1,0 +1,115 @@
+.relative{
+  position: relative;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+div{
+  box-sizing: border-box;
+}
+
+.dody-content{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  line-height: 1.5;
+  color: #333;
+  max-height: 350px;
+  overflow: auto;
+}
+
+.dody-footnote{
+  margin-top: 0.5rem;
+  color: #777;
+  font-size: 0.875rem;
+}
+
+.dody-title{
+  font-size: 1.5rem;
+}
+
+.dody-button{
+  height: 3rem;
+  width: 13rem;
+  background-color: #487df3;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+}
+
+.dody-footer{
+  display: flex;
+  justify-content: space-between;
+}
+
+.dody-dialog-back{
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.dody-dialog-wrapper{
+  position: fixed;
+  background-color: white;
+  width: 90%;
+  max-width: 550px;
+  overflow: hidden;
+  padding: 3rem;
+  box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.1), 0 6px 30px 5px rgba(0, 0, 0, 0.06), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-animation:fade-in-top .2s cubic-bezier(.39,.575,.565,1.000) both;animation:fade-in-top .2s cubic-bezier(.39,.575,.565,1.000) both
+}
+
+.dody-xl{
+  max-width: 1000px;
+}
+.dody-l{
+  max-width: 800px;
+}
+.dody-m{
+  max-width: 550px;
+}
+.dody-s{
+  max-width: 350px;
+  padding: 2rem;
+}
+
+ @-webkit-keyframes fade-in-top {
+  0% {
+    -webkit-transform: translate(-50%, -60%);
+            transform: translate(-50%, -60%);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    opacity: 1;
+  }
+}
+@keyframes fade-in-top {
+  0% {
+    -webkit-transform: translate(-50%, -60%);
+            transform: translate(-50%, -60%);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    opacity: 1;
+  }
+}
