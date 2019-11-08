@@ -35,10 +35,10 @@ function Dody() {
           콘텐츠 입니다 관련된 콘텐츠를 작성해주세요콘텐츠 입니다 관련된 콘텐츠를 작성해주세요콘텐츠 입니다 관련된 콘텐츠를 작성해주세요콘텐츠 입니다 관련된 콘텐츠를 작성해주세요
           </Content>
         <FooterButton
-          buttonPosition // 취소 버튼의 위치
-          buttonType
-          buttonStyle // 닫기 모양 스타일, 사각형 모양 버튼, cancelButton
-          closeDialog={() => handleDialog(false)} // 값 전달을 좀더 효율적으로 해야 함.
+          position={'l'} // 취소 버튼의 위치 (r, l, c)
+          buttonType // cross(x 버튼)
+          // disable
+          closeDialog={() => handleDialog(false)}
           >
           확인하기
         </FooterButton>
