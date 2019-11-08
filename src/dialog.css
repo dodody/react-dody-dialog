@@ -1,0 +1,195 @@
+.relative{
+  position: relative;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+div{
+  box-sizing: border-box;
+}
+
+.dody-content{
+  margin-top: 2rem;
+  line-height: 1.5;
+  color: #333;
+  max-height: 350px;
+  overflow: auto;
+}
+
+.dody-footnote{
+  margin-top: 0.5rem;
+  color: #777;
+  font-size: 0.875rem;
+}
+
+.dody-title{
+  font-size: 1.5rem;
+}
+
+/* .dody-button{
+  height: 3rem;
+  width: 13rem;
+  background-color: #487df3;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+} */
+
+.dody-footer{
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 2rem;
+}
+
+.dody-button{
+  padding: 0.75rem 3.5rem;
+  font-size: 0.875rem;
+  border-radius: 4px;
+  background-color: #da3d3d;
+  border: none;
+  transition: 0.2s;
+  color: white;
+  display: flex;
+}
+.dody-buttonType-cross{
+  padding: 0.75rem 3.5rem;
+  font-size: 0.875rem;
+  border-radius: 4px;
+  background-color: #da3d3d;
+  border: none;
+  transition: 0.2s;
+  color: white;
+  display: flex;
+}
+.dody-button:hover{
+  box-shadow: 2px 5px 13px 0 rgba(0, 0, 0, 0.1);
+}
+
+.dody-button-l{
+  justify-content: flex-start;
+}
+.dody-button-r{
+  justify-content: flex-end;
+}
+.dody-button-c{
+  justify-content: center;
+}
+
+.dody-dialog-back{
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.dody-dialog-wrapper{
+  position: fixed;
+  background-color: white;
+  width: 90%;
+  max-width: 550px;
+  /* overflow: hidden; */
+  padding: 3rem;
+  box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.1), 0 6px 30px 5px rgba(0, 0, 0, 0.06), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-animation:fade-in-top .2s cubic-bezier(.39,.575,.565,1.000) both;animation:fade-in-top .2s cubic-bezier(.39,.575,.565,1.000) both
+}
+
+.dody-xl{
+  max-width: 1000px;
+}
+.dody-l{
+  max-width: 800px;
+}
+.dody-m{
+  max-width: 550px;
+}
+.dody-s{
+  max-width: 350px;
+  padding: 2rem;
+}
+
+ @-webkit-keyframes fade-in-top {
+  0% {
+    -webkit-transform: translate(-50%, -60%);
+            transform: translate(-50%, -60%);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    opacity: 1;
+  }
+}
+@keyframes fade-in-top {
+  0% {
+    -webkit-transform: translate(-50%, -60%);
+            transform: translate(-50%, -60%);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    opacity: 1;
+  }
+}
+
+.dody-cross{
+  position: absolute;
+  top: -1rem;
+  right: 1rem;
+}
+.cross-wrapper{
+  cursor: pointer;
+  width: 45px;
+  display: flex;
+  justify-content: flex-end;
+}
+.dody-cross-button-r{
+  margin-right: -67px;
+}
+
+.css-cancel {
+  display: inline-block;
+  position: relative;
+  margin: 0 20px 0 7px;
+  padding: 0;
+  width: 2px;
+  height: 30px;
+  background: #000;
+  transform: rotate(45deg);
+  border-radius: 50px;
+}
+.css-cancel:before {
+  display: block;
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -14px;
+  width: 30px;
+  height: 2px;
+  margin-top: -1px;
+  background: #000;
+  border-radius: 50px;
+}
+
+.css-cancel-r {
+  background: white;
+}
+.css-cancel-r:before {
+  background: white;
+}
